@@ -42,7 +42,7 @@ void MainWindow::on_btnConectar_clicked()
       this->ui->txtLog->append("Conectou ao servidor");
     }
     else{
-      this->ui->txtLog->append("Nâo conectou ao servidor");
+      this->ui->txtLog->append("Não conectou ao servidor");
     }
 }
 
@@ -51,7 +51,7 @@ void MainWindow::timerEvent(QTimerEvent *e)
     enviarDados();
 }
 
-void MainWindow::on_btnConectar_2_clicked()
+void MainWindow::on_btnIniciar_clicked()
 {
     intervalo = this->ui->sliderFaixa->value() * 1000;
     inicio = this->ui->txtInicio->text().toInt();

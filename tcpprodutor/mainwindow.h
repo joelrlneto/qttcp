@@ -17,13 +17,18 @@ public:
   explicit MainWindow(QWidget *parent = 0);
   ~MainWindow();
 
-
 protected:
   void timerEvent(QTimerEvent *e);
 
 private slots:
+  /**
+   * @brief Tratamento do evento de clique do botão Conectar.
+   */
   void on_btnConectar_clicked();
-  void on_btnConectar_2_clicked();
+  /**
+   * @brief Tratamento do evento de clique do botão Start.
+   */
+  void on_btnIniciar_clicked();
 
 private:
 
